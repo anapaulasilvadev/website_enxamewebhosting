@@ -50,6 +50,7 @@ a{
     font-size: 1.8em;
     transition: .5s;
     text-transform: capitalize;
+    color: white;
 }
 
 section{
@@ -119,7 +120,6 @@ section{
 
 
 
-
     /*#region home*/
 
     #home{
@@ -155,7 +155,6 @@ section{
     }
 
     /*#endregion home*/
-
 
 
 
@@ -215,7 +214,6 @@ section{
 
 
     /*#endregion sectionSpecialties*/
-
 
 
 
@@ -328,7 +326,6 @@ section{
         }
 
     /*#endregion sectionProducts*/
-
 
 
 
@@ -493,8 +490,73 @@ section{
          border: none;
          border-radius: 8px;
     }
-    
 
+    .contactI li span{
+        font-size: 2em;
+    }
+
+    .contactI li input[type=submit],
+    .contactI li input[type=reset] {
+        padding: 20px 30px !important;
+        font-size: 2em !important;
+        margin: 0 60px;
+        transition: .5s;
+    }
+    
       /*#endregion sectionContact*/
 
-    
+
+
+
+
+      /*#region Footer*/
+
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: black;
+        padding: 50px 10px;
+    }
+
+    .footerC{
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footerC li{
+        height: 30px;
+        line-height: 30px;
+        opacity: .6;
+        transition: .3s;
+    }
+
+    .footerC li:hover{
+        opacity: 1;
+        transition: .3s;
+    }
+
+    .footerC li:hover a{
+        background-color: rgb(249, 79, 1);
+        opacity: 1;
+        transition: .3s;
+        padding: 5px;
+        border: solid rgb(0, 179, 255);
+    }
+
+    .footerC a i,
+    .footerC a span,
+    .footerC h5{
+        opacity: .6;
+    }
+
+
+
+      /*#endregion Footer*/
+
+
+
+
+      
+      /**/
