@@ -76,6 +76,10 @@ section{
         z-index: 100;
     }
 
+    .menu button{
+         display: none; 
+    }
+
     .logo{
         height: 50px;
         padding: 10px 20px;
@@ -134,7 +138,7 @@ section{
         text-align: center;
     }
     .homeC h1{
-        font-size: 6rem;
+        font-size: 5rem;
         color: white;
     }
 
@@ -163,7 +167,7 @@ section{
     /*#region sectionSpecialties*/
 
     #specialties {
-        background-color:rgb(195, 237, 255);
+        background-color: rgb(210, 210, 210);
         padding: 8em 0;
     }
 
@@ -559,4 +563,6 @@ section{
 
 
       
-      /**/
+      /*#region Login*/
+
+      /*#endregion Login*/
