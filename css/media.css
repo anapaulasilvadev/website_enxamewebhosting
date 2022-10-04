@@ -530,17 +530,29 @@ tr:nth-child(odd) {
         height: 50px;
     }
 
+    .menu button:focus ~ .menuI{
+        height: 400px;
+    }
+
+    .menuI{
+        background-color: #333;
+        position: absolute;
+        height: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-around;
+        top: 0;
+        margin-top: 70px;
+        transition: all .3s;
+        overflow: hidden;
+    }
+
     .logo{
         height: 50px;
         padding: 10px 20px;
         filter: invert(100%);
     }
-
-    .menuI{
-        display: flex;
-        flex-direction: row;
-        padding-right: 25px;
-        }
 
     .menu li a{
         padding: 8px;
@@ -571,7 +583,7 @@ tr:nth-child(odd) {
 
     /*#endregion menu*/
 
-     /*#region sectionSpecialties*/
+    /*#region sectionSpecialties*/
 
   #specialties {
     background-color: rgb(210, 210, 210);
@@ -627,7 +639,7 @@ tr:nth-child(odd) {
 
 /*#endregion sectionSpecialties*/
 
- /*#region sectionServices*/
+    /*#region sectionServices*/
 
  .servicesC{
     text-align: center;
@@ -672,6 +684,115 @@ tr:nth-child(odd) {
 }
 
 /*#endregion sectionServices*/
+
+    
+    /*#region sectionProducts*/
+
+    #products{
+        background-image: url('../img/img6.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        text-align: center;
+        color: white;
+        }
+
+        .productsC{
+            width: 100%;
+            height: auto;
+        }
+
+        .productsI{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .productsCard {
+            width: 40%;
+            text-align: center;
+            color: white;
+            margin: 2em .5em;
+        }
+
+        .productsCard li{
+            height: 60px;
+            line-height: 60px;
+            background-color: white;
+            color: black;
+        }
+
+        .productsCard li.price{
+            font-size: 2em;
+            font-weight: 800;
+            color: white;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: rgb(249, 79, 1);
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+            margin-bottom: -50px;
+        }
+
+        .productsCard li.tituloCard{
+            color: white;
+            height: 110px;
+            line-height: 130px;
+            background-color: black;
+            font-size: 2em;
+            text-transform: capitalize;
+            padding-top: .8em;
+        }
+
+        .Standard li{
+            background-color: rgb(148, 173, 205);
+        }
+
+        .Standard li.tituloCard{ 
+            background-color: rgb(60, 75, 94);
+        }
+
+        .Medium li{
+            background-color: rgb(148, 173, 205);
+        }
+
+        .Medium li.tituloCard {
+            color: white;
+            height: 110px;
+            line-height: 130px;
+            background-color: rgb(60, 75, 94);
+            font-size: 2em;
+            text-transform: capitalize;
+            padding-top: .8em;
+        }
+
+        .Black li{
+            background-color: black;
+            color: white;
+        }
+
+        .Golden li{
+            background-color: goldenrod;
+            color: black;
+        }
+
+        .Golden li.tituloCard {
+            color: white;
+            height: 110px;
+            line-height: 130px;
+            background-color: rgb(147, 13, 40);
+            font-size: 2em;
+            text-transform: capitalize;
+            padding-top: .8em;
+        }
+
+    /*#endregion sectionProducts*/
 
 }
 
