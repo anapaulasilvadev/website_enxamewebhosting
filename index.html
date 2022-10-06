@@ -7,9 +7,9 @@
 
     <!-- INICIO DE LINKS -->
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/media.min.css">
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 
     <!-- FIM DE LINKS -->
@@ -152,10 +152,6 @@
                                 </ul>
                             </div>
 
-
-
-
-
                         </div>
                     </div>
                  </section>
@@ -243,11 +239,14 @@
             <section id="contact">
                 <h2>Contato</h2>
                 <div class="contactC">
+
+                <form action="https://api.staticforms.xyz/submit" method="post">
+
                     <ul class="contactI">
-                        <li><input type="text" placeholder="Nome:" autocomplete="off" required></li>
-                        <li><input type="email" placeholder="Email:" autocomplete="off" required></li>
+                        <li><input type="text" name="name" placeholder="Nome:" autocomplete="off" required></li>
+                        <li><input type="email" name="email" placeholder="Email:" autocomplete="off" required></li>
                         <li>
-                            <textarea placeholder="Deixe sua mensagem:" cols="30" rows="8"></textarea>
+                            <textarea name="message" placeholder="Deixe sua mensagem:" cols="30" rows="8"></textarea>
                         </li>
                         <li>
                             <input type="submit" class="btnDefault" value="Submit">
@@ -257,6 +256,13 @@
                             <input type="checkbox"><span>Eu aceito porcarias em meu E-mail</span>
                         </li>
                     </ul>
+
+                    <input type="hidden" name="accessKey" value="3cf31b78-d46b-4ec7-9bce-3398f065635c">
+
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/tranks.html">
+
+                </form>
+
                 </div>
             </section>
         </main>
